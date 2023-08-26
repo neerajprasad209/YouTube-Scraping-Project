@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+        body{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #274B74 0%, #8233C5 50%, #E963FD 100%);
+            overflow: hidden;
+        }
+        h1{
+            position: relative;
+            text-align: center;
+            color: white;
+            padding-top: 5%;
+            
+        }
+        div{
+            position: fixed;
+            color: white;
+            text-align: center;
+            text-justify: auto;
+            height: 10%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+</style>
+<body>
+    <h1 id="heading">Youtube Scraped Data</h1>
+    <div>
+        <table cellspacing="2">
+            <h1 style="text-align: center;">
+                {% for table in tables %}
+                <h2>
+                    {{titles[loop.index]}}
+                </h2>
+                {{table | safe}}
+                {% endfor %}
+            </h1>
+        </table>
+    </div>
+</body>
+</html>
