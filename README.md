@@ -4,6 +4,6 @@
 
 # WebApp Homepage Screenshot
 
-![Homepage for my webapp](./ScreenShot/Ui 1.png)
+![Homepage for my webapp](./ScreenShot/Ui1.png)
 
-![Homepage for my webapp](./ScreenShot/Ui 2.png)
+![Homepage for my webapp](./ScreenShot/Ui2.png)
